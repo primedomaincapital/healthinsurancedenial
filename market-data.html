@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How often health insurance says no — Market Data | healthinsurancedenial.com</title>
+<meta name="description" content="Denial rates, appeal outcomes, and prior authorization denials from KFF analyses of federal data and HHS Inspector General reports.">
+<link rel="canonical" href="https://healthinsurancedenial.com/market-data">
+<meta property="og:title" content="How often health insurance says no — Market Data | healthinsurancedenial.com">
+<meta property="og:description" content="Denial rates, appeal outcomes, and prior authorization denials from KFF analyses of federal data and HHS Inspector General reports.">
+<meta property="og:url" content="https://healthinsurancedenial.com/market-data">
+<meta property="og:type" content="website">
+<style>
+:root{--blue:#1d4ed8;--deep:#0b1e4b;--red:#ef4444;--paper:#f8fafc;--ink:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden;line-height:1.65}
+.grotesk{font-family:'Space Grotesk',sans-serif}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;background:rgba(248,250,252,.92);backdrop-filter:blur(14px);border-bottom:1px solid #e2e8f0}
+nav .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px}
+nav .brand span{color:var(--blue)}
+nav a.cta{background:var(--blue);color:#fff;font-weight:600;font-size:13px;padding:12px 26px;border-radius:8px;text-decoration:none;transition:.3s}
+nav a.cta:hover{background:var(--red);transform:translateY(-2px)}
+.alert-strip{background:var(--red);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-align:center;padding:12px 5vw;position:relative;z-index:99;margin-top:73px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--deep);color:#fff}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero .bg{position:absolute;inset:0;z-index:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;opacity:.25}
+.hero-inner{position:relative;z-index:2;padding:80px 5vw;max-width:1200px}
+.kicker{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#93c5fd;margin-bottom:20px}
+h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,6.6vw,96px);font-weight:700;line-height:1.02;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--red)}
+.hero-sub{max-width:600px;margin-top:24px;font-size:19px;color:#cbd5e1}
+.hero-price{margin-top:34px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.price-tag{font-family:'Space Grotesk',sans-serif;font-size:44px;font-weight:700}
+.price-tag small{display:block;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:15px;padding:17px 44px;border-radius:8px;text-decoration:none;transition:.3s}
+.btn:hover{background:#fff;color:var(--deep);transform:translateY(-3px)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn.ghost:hover{border-color:var(--red);color:var(--red)}
+section{padding:140px 5vw}
+.wrap{max-width:1200px;margin:0 auto}
+.sec-label{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--blue);margin-bottom:16px;font-weight:600}
+h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4.2vw,58px);font-weight:700;line-height:1.06;letter-spacing:-.015em;margin-bottom:26px}
+h2 em{font-style:normal;color:var(--red)}
+.lede{font-size:19px;max-width:700px;color:#475569}
+.crisis{background:#fff;border:2px solid var(--red);border-radius:16px;padding:60px 5vw;margin:0 3vw}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:54px;margin-top:48px}
+.two-col p{font-size:16.5px;color:#475569;margin-bottom:18px}
+.metric-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.metric{background:var(--deep);color:#fff;border-radius:12px;padding:32px}
+.metric b{display:block;font-family:'Space Grotesk',sans-serif;font-size:44px;color:var(--red)}
+.metric span{font-size:13px;color:#94a3b8}
+.photo-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}
+.photo-strip img{width:100%;height:250px;object-fit:cover;border-radius:12px}
+.stats-dark{background:var(--deep);color:#fff}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:48px;text-align:center}
+.stat b{display:block;font-family:'Space Grotesk',sans-serif;font-size:56px;color:var(--red);font-weight:700}
+.stat span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8}
+.buyers .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:50px}
+.card{background:#fff;border:1px solid #e2e8f0;border-left:4px solid var(--red);border-radius:0 12px 12px 0;padding:38px 32px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(239,68,68,.12)}
+.card h3{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin-bottom:12px}
+.card p{font-size:15px;color:#64748b}
+.cta-sec{text-align:center;background:var(--red);color:#fff}
+.cta-sec .sec-label{color:#fff}
+.cta-sec h2{color:#fff}
+.cta-sec .lede{color:#fecaca;margin:0 auto 38px}
+.cta-sec .hero-price{justify-content:center}
+.cta-sec .btn{background:#fff;color:var(--red)}
+.cta-sec .btn:hover{background:var(--deep);color:#fff}
+.cta-sec .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+footer{padding:54px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;background:#fff}
+footer p{font-size:13px;color:var(--muted)}
+footer a{color:var(--blue);text-decoration:none;font-weight:600}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .85s cubic-bezier(.2,.8,.2,1),transform .85s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:860px){.two-col,.metric-cards,.photo-strip,.stat-grid,.buyers .cards{grid-template-columns:1fr}h1{font-size:46px}.crisis{margin:0}}
+
+.insights .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:50px}
+.insights .card .thumb{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:22px;display:block}
+.insights .card a.read{display:inline-block;margin-top:16px;color:var(--blue);font-weight:700;font-size:14px;text-decoration:none}
+.insights .card a.read:hover{color:var(--red)}
+@media(max-width:860px){.insights .cards{grid-template-columns:1fr}}
+</style>
+<style>
+/* --- Track A data-page supplement (Oct 2026) --- */
+.data-page{max-width:860px;margin:0 auto;padding:28px 20px 60px;overflow-wrap:break-word}
+.data-page h1{overflow-wrap:break-word;word-break:break-word}
+.data-page h2{overflow-wrap:break-word;word-break:break-word;margin-top:2.2em}
+.data-page table{width:100%;border-collapse:collapse;margin:1em 0;font-size:15px;line-height:1.5}
+.data-page th,.data-page td{text-align:left;padding:10px 8px;border-bottom:1px solid rgba(128,128,128,.35);vertical-align:top;overflow-wrap:break-word}
+.data-page .trend-up{color:#1a7a3a;font-weight:700;white-space:nowrap}
+.data-page .trend-down{color:#a33;font-weight:700;white-space:nowrap}
+.data-page .trend-base{color:#666;font-weight:700;white-space:nowrap}
+.data-page .stamp{font-size:14px;opacity:.85}
+.data-page .buybox{border:1px solid rgba(128,128,128,.5);padding:18px;margin:2em 0}
+.data-page .buybox a{font-weight:700}
+.data-page .note{font-size:14px;line-height:1.6;opacity:.92}
+.data-page a{overflow-wrap:break-word}
+@media(max-width:480px){.data-page{padding:20px 14px 48px}.data-page table,.data-page tbody,.data-page tr,.data-page td{display:block;width:100%}.data-page thead{display:none}.data-page td{border-bottom:1px solid rgba(128,128,128,.25)}.data-page td:before{content:attr(data-label)": ";font-weight:700}}
+
+/* Phase 1 assembly 2026-10-31 */
+@media (max-width:900px){h1{font-size:clamp(44px,11vw,72px)!important}}
+@media (max-width:900px){.kicker{letter-spacing:.18em!important}}
+
+/* Phase 1 assembly 2026-10-31 — nav solid correction */
+@media (max-width:900px){nav{background:rgb(248,250,252)!important;backdrop-filter:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Health Insurance Claim Denial Rates",
+  "description": "Aggregated public benchmarks for health insurance denials: marketplace claim denial rates, appeal outcomes, and Medicare Advantage prior authorization denials.",
+  "temporalCoverage": "2020/2024",
+  "dateModified": "2026-10-25",
+  "creator": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "sourceOrganization": [
+    "https://www.kff.org",
+    "https://oig.hhs.gov",
+    "https://www.cms.gov"
+  ],
+  "url": "https://healthinsurancedenial.com/market-data",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+</script>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1{font-size:clamp(30px,8.5vw,58px)!important;line-height:1.15!important}
+}
+</style>
+</head>
+<body>
+<nav><div class="brand">Prime Domain Capital</div><a href="https://www.afternic.com/domain/healthinsurancedenial.com">Buy Now — $6,888</a></nav>
+<main class="data-page">
+<p class="stamp">Last updated: October 25, 2026</p>
+<h1>How often health insurance says no</h1>
+<p>Denial rates, appeal outcomes, and prior authorization denials from KFF analyses of federal data and HHS Inspector General reports.</p>
+<p>The denial that makes the news is usually a single patient's fight. The data behind it is quieter and larger: one in five claims on the federal marketplace was denied in 2023, the highest in-network rate since tracking began, while fewer than one in a hundred denied claims ever gets appealed. In Medicare Advantage post-acute care, the pattern sharpens further — denials that collapse on appeal at a 95% rate, suggesting the first decision, not the patient's case, was the problem.</p>
+<h2>The figures</h2>
+<table>
+<thead><tr><th>Figure</th><th>Value</th><th>Trend vs prior period</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td data-label="Figure">HealthCare.gov plans, in-network claims denied</td><td data-label="Value"><strong>19% (2023)</strong></td><td data-label="Trend"><span class="trend-up">▲ Up</span><br><small>Prior: About 18% in 2020 (KFF analysis of CMS data)</small></td><td data-label="Source"><a href="https://www.fiercehealthcare.com/payers/kff-plans-healthcaregov-denied-20-claims-2023">KFF analysis of CMS transparency data (reported by Fierce Healthcare)</a></td></tr>
+<tr><td data-label="Figure">HealthCare.gov plans, out-of-network claims denied</td><td data-label="Value"><strong>37% (2023)</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: KFF did not previously track out-of-network denials — no prior-period equivalent</small></td><td data-label="Source"><a href="https://www.hfma.org/fast-finance/aca-marketplace-plans-payment-denial/">KFF analysis of CMS transparency data (reported by HFMA)</a></td></tr>
+<tr><td data-label="Figure">HealthCare.gov plans, all claims denied</td><td data-label="Value"><strong>20% overall; 425 million claims received, 73 million in-network claims denied (2023)</strong></td><td data-label="Trend"><span class="trend-up">▲ Up</span><br><small>Prior: Highest in-network rate since KFF began tracking in 2015</small></td><td data-label="Source"><a href="https://www.hfma.org/fast-finance/aca-marketplace-plans-payment-denial/">KFF analysis of CMS transparency data (reported by HFMA)</a></td></tr>
+<tr><td data-label="Figure">In-network denial rate range by insurer / by state</td><td data-label="Value"><strong>1%–54% by insurer; Alabama 34% highest state average, South Dakota 6% lowest</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: Cross-sectional range for 2023 — no prior-period range published in the same release</small></td><td data-label="Source"><a href="https://www.hfma.org/fast-finance/aca-marketplace-plans-payment-denial/">KFF analysis of CMS transparency data (reported by HFMA)</a></td></tr>
+<tr><td data-label="Figure">Denied claims appealed by consumers; appeals upheld</td><td data-label="Value"><strong>Fewer than 1% appealed; 56% of appealed denials upheld (2023)</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: Prior KFF analyses report the same pattern (rare appeals, usually upheld) without a directly comparable 2023-vs-prior percentage in the cited release</small></td><td data-label="Source"><a href="https://www.fiercehealthcare.com/payers/kff-plans-healthcaregov-denied-20-claims-2023">KFF analysis of CMS transparency data (reported by Fierce Healthcare)</a></td></tr>
+<tr><td data-label="Figure">Most common stated reasons for in-network denials</td><td data-label="Value"><strong>“Other” 34%; administrative 18%; excluded service 16%; lack of prior authorization or referral 9%; lack of medical necessity 6% (2023)</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: Reason mix for 2023; earlier KFF reason coding differs (72% “all other” in 2020) and is not directly comparable</small></td><td data-label="Source"><a href="https://www.darkdaily.com/2025/03/31/kff-report-insurers-on-federal-health-exchange-denied-19-of-in-network-claims/">KFF analysis of CMS transparency data (reported by Dark Daily)</a></td></tr>
+<tr><td data-label="Figure">Medicare Advantage prior authorization, skilled nursing facility admissions denied</td><td data-label="Value"><strong>12% (June 2024; 19 organizations, 109,400 requests)</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: No prior-period figure in the June 2026 OIG reports — trend tracking starts with the next refresh</small></td><td data-label="Source"><a href="https://leadingage.org/new-oig-findings-underscore-barriers-to-snf-care-in-medicare-advantage/">HHS Office of Inspector General, June 2026 reports (via LeadingAge)</a></td></tr>
+<tr><td data-label="Figure">Medicare Advantage prior authorization denied, long-term care hospitals / inpatient rehab</td><td data-label="Value"><strong>65% LTCH; 54% IRF (June 2024)</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: Context: KFF's earlier overall Medicare Advantage prior authorization denial rate was under 8% (7.7%) across all services</small></td><td data-label="Source"><a href="https://www.kff.org/medicare/medicare-advantage-insurers-deny-prior-authorization-requests-for-post-acute-care-at-substantially-higher-rates-than-the-overall-denial-rate/">HHS Office of Inspector General, June 2026 reports (via KFF)</a></td></tr>
+<tr><td data-label="Figure">Appealed skilled nursing denials overturned</td><td data-label="Value"><strong>95% overturned; only 18% of denials appealed (June 2024)</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: No prior-period figure in the OIG reports — trend tracking starts with the next refresh</small></td><td data-label="Source"><a href="https://www.ama-assn.org/practice-management/prior-authorization/oig-reports-blast-prior-authorization-use-medicare">HHS Office of Inspector General, June 2026 reports (via AMA)</a></td></tr>
+</tbody>
+</table>
+<h2>How to read these numbers</h2>
+<p>Included: KFF's analyses of CMS transparency filings for HealthCare.gov plans (2020 and 2023) and the HHS Office of Inspector General's June 2026 Medicare Advantage prior authorization reports. Excluded: employer-plan denial rates, which are not publicly reported in comparable form, and any estimate of total national denials that blends incompatible plan types. Where two secondary reports of the same KFF release differ on a decimal, the figure carried here is the one corroborated by at least two independent reports of the release.</p>
+<p class="note">Disclaimer: A denial is not always a final refusal — claims resubmitted and paid are excluded from KFF's denial rate — and marketplace-plan figures do not describe employer plans or state-based marketplaces. Figures on this page are aggregated public estimates assembled for information only. They are not investment advice, legal advice, medical advice, or a professional opinion on any specific case, claim, project, or bottle. Original reporting and the underlying surveys remain the work of the sources linked above; this page summarizes their published figures with attribution and adds no proprietary dataset.</p>
+<div class="buybox">
+<p><strong>healthinsurancedenial.com is offered for sale at $6,888.</strong></p>
+<p><a href="https://www.afternic.com/domain/healthinsurancedenial.com">Buy Now — $6,888 via Afternic</a></p>
+<p>Questions about this domain: <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p>
+</div>
+<h2>Changelog</h2>
+<ul><li>October 2026: Initial edition — KFF marketplace denial series 2020–2023, denial reasons, appeal outcomes, and OIG Medicare Advantage prior authorization findings established.</li></ul>
+</main>
+<footer><p>Offered by <strong>Prime Domain Capital</strong> · Private holder selling its own domain assets</p><p><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p></footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script>
+<p class="back-home" style="display:block;text-align:center;padding:28px 16px;font-size:15px"><a href="https://healthinsurancedenial.com/" style="color:inherit">&larr; Back to healthinsurancedenial.com</a></p>
+</body>
+</html>
